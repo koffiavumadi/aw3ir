@@ -23,18 +23,33 @@
             width: 200px;
             display: inline-block;
         }
-        background-color:pink
-        padding:5px;
-        border-width:1 px black color
 
+        #error {
+        background-color : #fd6c9e;
+        padding : 5px;
+        border-width: 1px solid #000000;
+        }
 
+        #resultat {
+
+         background-color : #71FF33;
+        padding : 5px;
+        border: 1px solid #000000;
+        color: black;
+        
+        }
+     #space{
+        background-color :#e9ebee;
+        padding: 1px;
+     }
 
 
     </style>
 
     <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
     <!--<link rel="stylesheet" href="style.css">-->
-    <script src="Formulaire.js"></script>
+
+    <script type="text/javascript" src="Formulaire.js"></script>
 </head>
 
 <body>
@@ -58,7 +73,7 @@
 
             <p>
                 <label for='birthday'>Date de naissance </label>
-                <input placeholder='JJ/MM/AAAA ' type='date' id=' birthday' name=' birthday' />
+                <input placeholder='JJ/MM/AAAA ' type='date' id='birthday' name='birthday' />
             </p>
 
             <p>
@@ -75,14 +90,13 @@
 
 
 
-            <input type='button' value="valider" onclick="validation()" />
+            <input type='button' id='bouton_envoi' value="valider" onclick="validation()" />
 
 
 
 
-            <div id='error'>
-
-            </div>
+            <div id="error"></div>
+            <div id="space"></div>
             <div id="resultat"> </div>
 
 
