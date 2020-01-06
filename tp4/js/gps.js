@@ -15,8 +15,8 @@ function showPosition(position) {
     
     $("#map").html("<img src='"+img_url+"'>");
     // question 3 Geolocalisation 
-   // $("#adresse").val(latlon);
-   var lat=position.coords.latitude;
+    $("#adresse").val(latlon);
+ /*  var lat=position.coords.latitude;
    var lng=position.coords.longitude;
    var latlng = new google.maps.LatLng(lat, lng);
    var geocoder = new google.maps.Geocoder();
@@ -28,8 +28,9 @@ function showPosition(position) {
         if (status == google.maps.GeocoderStatus.OK) {
             console.log(results);
             var address = (results[0].formatted_address);
-            $("#adresse").val(address);
+            $("#adresse").val(address);*/
 }
+
 /*
 //
 // question 3 Geolocalisation 
