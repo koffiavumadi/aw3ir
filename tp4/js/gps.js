@@ -16,24 +16,12 @@ function showPosition(position) {
     $("#map").html("<img src='"+img_url+"'>");
     // question 3 Geolocalisation 
    // $("#adresse").val(latlon);
-    //
-    var geocoder = new google.maps.Geocoder;
-    var latlng = {lat: position.coords.latitude, lng: position.coords.longitude};
 
-    geocoder.geocode({'location': latlng}, function(results, status) {
-        if (status === 'OK') {
-          if (results[0]) {
-           
-           $("#adresse").val(results[0].formatted_address);
-          } else {
-            window.alert('No results found');
-          }
-        } else {
-          window.alert('Geocoder failed due to: ' + status);
-        }
-      });
-    //
 }
+
+//
+
+//
 
 // Au cas ou l'utilisateur refuse
 // Ou si une erreur arrive
