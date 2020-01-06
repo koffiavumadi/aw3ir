@@ -4,114 +4,114 @@ $( document ).ready(function() {
      console.log( "DOM ready!" );
       
 
-            $("#name").keyup(function(){
-                if(($("#name").val().length < 5))
+            $("#nom").keyup(function(){
+                if(($("#nom").val().length < 5))
                 {
-                    $("#name").css("border-color","#ff0000");
+                    $("#nom").css("border-color","#ff0000");
                 }
                 else
                 {
-                    $("#name").css("border-color","#48DE14");
+                    $("#nom").css("border-color","#48DE14");
                 }
             
             });
-            $("#firstname").keyup(function(){
-                if(($("#firstname").val().length < 5))
+            $("#Prenom").keyup(function(){
+                if(($("#Prenom").val().length < 5))
                 {
-                    $("#firstname").css("border-color","#ff0000");
+                    $("#Prenom").css("border-color","#ff0000");
                 }
                 else
                 {
-                    $("firstname").css("border-color","#48DE14");
+                    $("Prenom").css("border-color","#48DE14");
                 }
             
             });
-            $("#adress").keyup(function(){
-                if(($("#adress").val().length < 5))
+            $("#Adresse").keyup(function(){
+                if(($("#Adresse").val().length < 5))
                 {
-                    $("#adress").css("border-color","#ff0000");
+                    $("#Adresse").css("border-color","#ff0000");
                 }
                 else
                 {
-                    $("#adress").css("border-color","#48DE14");
+                    $("#Adresse").css("border-color","#48DE14");
                 }
             
             });
-            $("#birthday").keyup(function(){
-                if(($("#birthday").val().length < 5))
+            $("#datedenaissance").keyup(function(){
+                if(($("#datedenaissance").val().length < 5))
                 {
-                    $("#birthday").css("border-color","#ff0000");
+                    $("#datedenaissance").css("border-color","#ff0000");
                 }
                 else
                 {
-                    $("#birthday").css("border-color","#48DE14");
+                    $("#datedenaissance").css("border-color","#48DE14");
                 }
             
             });
-            $("#mail").keyup(function(){
-                if(($("#mail").val().length < 5))
+            $("#email").keyup(function(){
+                if(($("#email").val().length < 5))
                 {
-                    $("#mail").css("border-color","#ff0000");
+                    $("#email").css("border-color","#ff0000");
                 }
                 else
                 {
-                    $("#mail").css("border-color","#48DE14");
+                    $("#email").css("border-color","#48DE14");
                 }
             
             });
 
-            $("#name").keydown(function(){
-                if(($("#name").val().length < 5))
+            $("#nom").keydown(function(){
+                if(($("#nom").val().length < 5))
                 {
-                    $("#name").css("border-color","#ff0000");
+                    $("#nom").css("border-color","#ff0000");
                 }
                 else
                 {
-                    $("#name").css("border-color","#48DE14");
+                    $("#nom").css("border-color","#48DE14");
                 }
             
             });
-            $("#firstname").keydown(function(){
-                if(($("#firstname").val().length < 5))
+            $("#Prenom").keydown(function(){
+                if(($("#Prenom").val().length < 5))
                 {
-                $("#firstname").css("border-color","#ff0000");
+                $("#Prenom").css("border-color","#ff0000");
                 }
                 else
                 {
-                    $("#firstname").css("border-color","#48DE14");
+                    $("#Prenom").css("border-color","#48DE14");
                 }
             
             });
-            $("#adress").keydown(function(){
-                if(($("#adress").val().length < 5))
+            $("#Adresse").keydown(function(){
+                if(($("#Adresse").val().length < 5))
                 {
-                    $("#adress").css("border-color","#ff0000");
+                    $("#Adresse").css("border-color","#ff0000");
                 }
                 else
                 {
-                    $("#adress").css("border-color","#48DE14");
+                    $("#Adresse").css("border-color","#48DE14");
                 }
             
             });
-            $("#birthday").keydown(function(){
-                if(($("#birthday").val().length < 5))
+            $("#datedenaissance").keydown(function(){
+                if(($("#datedenaissance").val().length < 5))
                 {
-                    $("#birthday").css("border-color","#ff0000");
+                    $("#datedenaissance").css("border-color","#ff0000");
                 }
                 else
                 {
-                    $("#birthday").css("border-color","#48DE14");
+                    $("#datedenaissance").css("border-color","#48DE14");
                 }
             
             });
-            $("#mail").keydown(function(){
-                if(($("#mail").val().length < 5))
+            $("#email").keydown(function(){
+                if(($("#email").val().length < 5))
                 {
-                    $("#mail").css("border-color","#ff0000");
+                    $("#email").css("border-color","#ff0000");
                 }
                 else
                 {
-                    $("#mail").css("border-color","#48DE14");
+                    $("#email").css("border-color","#48DE14");
                 }
             
             });
@@ -121,7 +121,7 @@ $( document ).ready(function() {
             $("#envoyer").on("click", function (event) {
             event.preventDefault();
  
-                if($("#name").val().length < 5)
+                if($("#nom").val().length < 5)
                 {
                     $('#myModal').modal("show");
                     $(".modal-title").text(" Veuillez remplir tout les champs");
@@ -129,7 +129,7 @@ $( document ).ready(function() {
                 }
                     else
                     { 
-                        if($("#firstname").val().length < 5)
+                        if($("#Prenom").val().length < 5)
                         {
                                 $('#myModal').modal("show");
                                 $(".modal-title").text(" Veuillez remplir tout les champs !");
@@ -138,7 +138,7 @@ $( document ).ready(function() {
 
                         else 
                         {
-                            if($("#adress").val().length < 5)
+                            if($("#Adresse").val().length < 5)
                             {
                                 $('#myModal').modal("show");
                                 $(".modal-title").text(" Veuillez remplir tout les champs !");
@@ -146,7 +146,7 @@ $( document ).ready(function() {
                             }
                             else 
                             {
-                                if($("#birthday").val().length < 5)
+                                if($("#datedenaissance").val().length < 5)
                                 {
                                 $('#myModal').modal("show");
                                 $(".modal-title").text(" Veuillez remplir tout les champs !");
@@ -154,7 +154,7 @@ $( document ).ready(function() {
                                 }
                                 else
                                 {
-                                        if($("#mail").val().length < 5)
+                                        if($("#email").val().length < 5)
                                         {
                                         $('#myModal').modal("show");
                                         $(".modal-title").text(" Veuillez remplir tout les champs !");
@@ -162,18 +162,18 @@ $( document ).ready(function() {
                                         }
                                         else
                                         {
-                                            if($("#name").val() !== "" && $("#firstname").val() !== "" && $("#birthday").val() !== "" 
-                                            && $("#adress").val() !== "" && $("#mail").val() !== "" )
+                                            if($("#nom").val() !== "" && $("#Prenom").val() !== "" && $("#datedenaissance").val() !== "" 
+                                            && $("#Adresse").val() !== "" && $("#email").val() !== "" )
                                             {
                                                     $('#myModal').modal("show");
-                                                    $(".modal-title").html("Bienvenue "+ document.querySelector("#firstname").value);
-                                                    $('.modal-body').html("Vous étes né le: "+ document.querySelector("#birthday").value
+                                                    $(".modal-title").html("Bienvenue "+ document.querySelector("#Prenom").value);
+                                                    $('.modal-body').html("Vous étes né le: "+ document.querySelector("#datedenaissance").value
                                                     +"</br>Et vous Habitez à: "
-                                                    + document.querySelector("#adress").value
+                                                    + document.querySelector("#Adresse").value
                                                     +'</br><a href="https://maps.google.com/maps?q='
                                                     +document.querySelector("#Adresse").value
                                                     +'"><img src="https://maps.googleapis.com/maps/api/staticmap?markers='
-                                                    +document.querySelector("#adress").value+'&zoom=10&size=400x300&key=AIzaSyAkmvI9DazzG9p77IShsz_Di7-5Qn7zkcg"/></a>');
+                                                    +document.querySelector("#Adresse").value+'&zoom=10&size=400x300&key=AIzaSyAkmvI9DazzG9p77IShsz_Di7-5Qn7zkcg"/></a>');
                                             }
                                                         
                                         }
@@ -191,3 +191,5 @@ $( document ).ready(function() {
         
     });
   });
+
+    
