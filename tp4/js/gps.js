@@ -29,13 +29,13 @@ function showPosition(position) {
         if (status == google.maps.GeocoderStatus.OK) {
             console.log(results);
             var address = (results[0].formatted_address);
-            $("#adresse").val(formatted_address);
+            $("#adresse").val(latlon);
 }
 
 /*
 //
 // question 3 Geolocalisation 
-   // $("#adresse").val(latlon);
+   // 
 function getReverseGeocodingData(lat, lng) {
     var latlng = new google.maps.LatLng(lat, lng);
     // This is making the Geocode request
