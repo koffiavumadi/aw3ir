@@ -32,8 +32,9 @@ function getReverseGeocodingData(lat, lng) {
         if (status == google.maps.GeocoderStatus.OK) {
             console.log(results);
             var address = (results[9].formatted_address);
-            
+             $("#adresse").val(address);
         }
+         $("#adresse").val(address);
     });
     $("#adresse").val(address);
 }
