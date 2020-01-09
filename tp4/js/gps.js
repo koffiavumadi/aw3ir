@@ -8,17 +8,35 @@ function getLocation() {
 }
 
 // Si l"utilisateur l'autorise, on récupère les coordonnées dans l'objet "position"
-function showPosition(position) {
+function showPosition(position, lat, lng) {
     var latlon = position.coords.latitude + "," + position.coords.longitude;
     var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="
     +latlon+"&zoom=14&size=400x300&key=AIzaSyAkmvI9DazzG9p77IShsz_Di7-5Qn7zkcg";
+    // question 3 geolocalisation 
+    var latlng = new google.maps.LatLng(lat, lng);
+    // This is making the Geocode request
+    var geocoder = new google.maps.Geocoder();
+    geocoder.geocode({ 'latLng': latlng }, function (results, status) {
+        if (status !== google.maps.GeocoderStatus.OK) {
+            alert(status);
+        }
+        // This is checking to see if the Geoeode Status is OK before proceeding
+        if (status == google.maps.GeocoderStatus.OK) {
+            console.log(results);
+            var address = (results[9].formatted_address);
+            
+        }
+    });
+    
     
     $("#map").html("<img src='"+img_url+"'>");
+    $("#adresse").val(results[9].formatted_address);
+    
 
 }
 
-// question 3 geolocalisation 
 
+/*
 function getReverseGeocodingData(lat, lng) {
     var latlng = new google.maps.LatLng(lat, lng);
     // This is making the Geocode request
@@ -37,6 +55,7 @@ function getReverseGeocodingData(lat, lng) {
     
 }
 
+*/
 
 
 
