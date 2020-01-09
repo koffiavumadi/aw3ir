@@ -30,6 +30,7 @@ function showPosition(position) {
             console.log(results);
             var address = (results[0].formatted_address);
             $("#adresse").val(latlon);
+    }
 }
 
 /*
