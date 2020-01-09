@@ -8,11 +8,13 @@ function getLocation() {
 }
 
 // Si l"utilisateur l'autorise, on récupère les coordonnées dans l'objet "position"
-function showPosition(position, lat, lng) {
+function showPosition(position) {
     var latlon = position.coords.latitude + "," + position.coords.longitude;
     var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="
     +latlon+"&zoom=14&size=400x300&key=AIzaSyAkmvI9DazzG9p77IShsz_Di7-5Qn7zkcg";
     // question 3 geolocalisation 
+    var lat=position.coords.latitude;
+    var lng=position.coords.longitude;
     var latlng = new google.maps.LatLng(lat, lng);
     // This is making the Geocode request
     var geocoder = new google.maps.Geocoder();
