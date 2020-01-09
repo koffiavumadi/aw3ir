@@ -71,4 +71,4 @@ function showError(error) {
             $("#map").html("An unknown error occurred.");
             break;
     }
-}
+   }
